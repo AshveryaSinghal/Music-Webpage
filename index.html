@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.webp"><b>Beat On Tune</b></li>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-music"></i></li>
+            <form action="/search" method="GET" class="search-form">
+                <div class="input-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" name="query" placeholder="Search..." class="search-input" />
+                    <button type="button" id="voice-button"><i class=" fa-2x fa-solid fa-microphone"></i></button>
+                </div>
+            </form>
+
+
+            <li class="user">
+                <i class="fa-solid fa-user"></i><b>My Account</b>
+                <div class="dropdown">
+                    <a href="#"><i class="fa-regular fa-id-badge"></i>Profile</a>
+                    <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <!-- Sidebar with singer names -->
+        <div class="sidebar">
+
+            <h2>Famous Singers</h2>
+
+            <div class="artist">
+                <img src="images/singer1.jpeg">
+                <a href="#" onclick="filterSongs('justin-bieber')">Justin Bieber</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer2.jpg">
+                <a href="#" onclick="filterSongs('Adele')">Adele</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer3.jpeg">
+                <a href="#" onclick="filterSongs('Ed Sheeran')">Ed Sheeran</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer4.webp">
+                <a href="#" onclick="filterSongs('Taylor Swift')">Taylor Swift</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer5.jpeg">
+                <a href="#" onclick="filterSongs('Rihanna')">Rihanna</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer6.jpg">
+                <a href="#" onclick="filterSongs('Bruno Mars')">Bruno Mars</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer7.jpg">
+                <a href="#" onclick="filterSongs('Billie Eilish')">Billie Eilish</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer8.jpeg">
+                <a href="#" onclick="filterSongs('The Weeknd')">The Weeknd</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer9.jpg">
+                <a href="#" onclick="filterSongs('Ariana Grande')">Ariana Grande</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer10.webp">
+                <a href="#" onclick="filterSongs('BTS')">BTS</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer11.webp">
+                <a href="#" onclick="filterSongs('BLACKPINK')">BLACKPINK</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer12.jpeg">
+                <a href="#" onclick="filterSongs('EXO')">EXO</a>
+            </div>
+            <div class="artist">
+                <img src="images/singer13.webp">
+                <a href="#" onclick="filterSongs('SEVENTEEN')">SEVENTEEN</a>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="dif">
+            <h1>Let the music take you away...</h1>
+            <div class="songList">
+                <div class="songlink" data-title="Let Me Love You" data-artist="justin-bieber">
+                    <img src="images/song1.jpg" alt=""> Let Me Love You
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/0lYBSQXN6rCTvUZvg9S0lU?si=cbcd96310d6d4495" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=rJ0D1GbDq1Q&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/let-me-love-you/GlADRz50Z0A" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B01M3V9OO8?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_xEDbcepEa39BsfWlOZVUj9GWr" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Rolling in the Deep" data-artist="Adele">
+                    <img src="images/song.jpg" > Rolling in the Deep
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/4OSBTYWVwsQhGLF9NHvIbR?si=62d3744ce9ed43fa" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=4ujBQOzs6Lw&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/rolling-in-the-deep/CF9cVDsHfEQ" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B073NNNB73?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_i3Ne69wmqYQmiNzoWYL4j0jdo" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Someone Like You" data-artist="Adele">
+                    <img src="images/song3.jpeg"> Someone Like You
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/3bNv3VuUOKgrf5hu3YcuRo?si=34b45bdb4c424d24" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=XqoanTj5pNY&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/someone-like-you/RThdVERgbUo" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B073N9K88T?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_cBSnsDbXgsbXNWJtvWpy1HKcj" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Hello" data-artist="Adele">
+                    
+                    <img src="images/song4.jpeg"> Hello
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/1Yk0cQdMLx5RzzFTYwmuld?si=2ee6f4efbeb64cfc" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=Ei8UnOPJX7w&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/hello/Oj0JdT5yZFo" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B073S97R5N?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_SCmiT1Z1biqkSlVkR4DptrfEL" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Shape of You" data-artist="Ed Sheeran">
+                    
+                    <img src="images/song5.png"> Shape of You
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3?si=fd38128154b14fae" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=xTvyyoF_LZY&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/shape-of-you/GQshUBlvAl8" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B01MT5EV2B?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_0Nh1ryT508LcmhDFLNAsexX5H" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Perfect" data-artist="Ed Sheeran">
+                    
+                    <img src="images/song6.jpg"> Perfect
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v?si=ed460cb5fc4f4b0d" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=9vDIzVuDzTs&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/perfect/RgdTexthD1E" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B07VQ9C1VZ?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_xobaSQZv4aSyxZG1DeaFEJ1lZ" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+                <div class="songlink" data-title="Thinking Out Loud" data-artist="Ed Sheeran">
+                    
+                    <img src="images/song7.jpg">Thinking Out Loud
+                    <div class="webc">
+                   <div class="web1">
+                    <a href="https://open.spotify.com/track/34gCuhDGsG4bRPIf9bb02f?si=8fe36124a51c4c11" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Spotify
+                    </a>
+                    <a href="https://music.youtube.com/watch?v=fdz_cabS9BU&feature=shared" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  YouTube Music
+                    </a>
+                </div>
+                <div class="web2">
+                    <a href="https://www.jiosaavn.com/song/thinking-out-loud/AxIedhhFAng" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  JioSaavn
+                    </a>
+                    <a href="https://music.amazon.com/tracks/B00JLJ185C?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_NaPKZ80dnaKXai9elPveBu3Q5" class="btn" id="spotify-link">
+                        <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+        <div class="songlink" data-title="Blank Space" data-artist="Taylor Swift">
+            <img src="images/song10.jpg" alt=""> Blank Space
+            <div class="webc">
+           <div class="web1">
+            <a href="https://open.spotify.com/track/1u8c2t2Cy7UBoG4ArRcF5g?si=e175c4ed78e64aef" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Spotify
+            </a>
+            <a href="https://music.youtube.com/watch?v=dC9QIUKviJU&feature=shared" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  YouTube Music
+            </a>
+        </div>
+        <div class="web2">
+            <a href="https://www.jiosaavn.com/song/blank-space/JycdQg5ZZHA" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  JioSaavn
+            </a>
+            <a href="https://music.amazon.com/tracks/B07L55SD37?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_lgsjvJNFfdsZ1EtndZHidt8Dw" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        <div class="songlink" data-title="Shake It Off" data-artist="Taylor Swift">
+                    
+            <img src="images/song8.jpg">Shake It Off
+            <div class="webc">
+           <div class="web1">
+            <a href="https://open.spotify.com/track/0cqRj7pUJDkTCEsJkx8snD?si=4369a59cc2b745bf" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Spotify
+            </a>
+            <a href="https://music.youtube.com/watch?v=sWMk8dwljFU&feature=shared" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  YouTube Music
+            </a>
+        </div>
+        <div class="web2">
+            <a href="https://www.jiosaavn.com/song/shake-it-off/QFwjBhwHfFg" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  JioSaavn
+            </a>
+            <a href="https://music.amazon.com/tracks/B073R1NHBQ?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_edApebhpskwcSu5VpUFCWsim3" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        <div class="songlink" data-title="Love Story" data-artist="Taylor Swift">
+                    
+            <img src="images/song9.png">Love Story
+            <div class="webc">
+           <div class="web1">
+            <a href="https://open.spotify.com/track/3CeCwYWvdfXbZLXFhBrbnf?si=fa1d4b76fab34a12" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Spotify
+            </a>
+            <a href="https://music.youtube.com/watch?v=aZ1hziFhj1o&feature=shared" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  YouTube Music
+            </a>
+        </div>
+        <div class="web2">
+            <a href="https://www.jiosaavn.com/song/love-story-taylor%e2%80%99s-version/BiYjfg0BZnA" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  JioSaavn
+            </a>
+            <a href="https://music.amazon.com/tracks/B073MT3BX7?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_csjYnMtFeyRRFYAXPH6douMEX" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        <div class="songlink" data-title="Sorry" data-artist="justin-bieber">
+                    
+            <img src="images/song11.jpg">Sorry
+            <div class="webc">
+           <div class="web1">
+            <a href="https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF?si=2c77b6959a4a4034" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Spotify
+            </a>
+            <a href="https://music.youtube.com/watch?v=v16qZcBllUU&feature=shared" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  YouTube Music
+            </a>
+        </div>
+        <div class="web2">
+            <a href="https://www.jiosaavn.com/song/sorry/SQoYS0xZYnc" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  JioSaavn
+            </a>
+            <a href="https://music.amazon.com/tracks/B073RT6HYW?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_HEQhXldcGW5bizsGrKuAegMyK" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+            </a>
+        </div>
+    </div>
+    
+        </div>
+        <div class="songlink" data-title="Dynamite" data-artist="BTS">
+                    
+            <img src="images/song12.jpg">Dynamite
+            <div class="webc">
+           <div class="web1">
+            <a href="https://open.spotify.com/track/72IwoG8tqvIWV10IHjpNNA?si=862b497f5e824f9b" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Spotify
+            </a>
+            <a href="https://music.youtube.com/watch?v=gdZLi9oWNZg&feature=shared" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  YouTube Music
+            </a>
+        </div>
+        <div class="web2">
+            <a href="https://www.jiosaavn.com/song/dynamite/PVg,fxp,VHo" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  JioSaavn
+            </a>
+            <a href="https://music.amazon.com/tracks/B09MHBK1FC?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&ref=dm_sh_AUFUb1uXDmSF9Z510bt5Ab9l1" class="btn" id="spotify-link">
+                <i class="fa-solid fa-circle-play"></i>  Amazon Mucic
+            </a>
+        </div>
+    </div>
+    
+        </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/59efa39b68.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
