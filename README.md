@@ -1,7 +1,3 @@
-Got it! Here's an improved, **API-free** and **clean** `README.md` for your project that still highlights voice functionality without mentioning Web APIs explicitly:
-
----
-
 # 🎵 Voice-Controlled Music Filter
 
 A beautiful, interactive music browsing interface that lets users **search and filter songs by typing or speaking** — no third-party APIs involved. With a stylish design and smooth user experience, it's the perfect front-end project for showcasing your skills in HTML, CSS, and JavaScript.
@@ -23,7 +19,7 @@ A beautiful, interactive music browsing interface that lets users **search and f
 * **HTML** – Structure
 * **CSS** – Design and layout
 * **JavaScript** – Search logic, voice input, and interactivity
-* **No APIs or libraries** – Everything done natively in the browser
+
 
 ---
 
