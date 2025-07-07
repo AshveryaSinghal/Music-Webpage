@@ -58,7 +58,6 @@ A beautiful, interactive music browsing interface that lets users **search and f
 2. Open `index.html` in any modern browser.
 3. Use mic and input to explore the features!
 
-> ✅ Works offline and doesn't rely on any third-party services or APIs.
 
 ---
 
